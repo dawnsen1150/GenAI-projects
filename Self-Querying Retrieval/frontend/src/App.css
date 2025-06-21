@@ -1,0 +1,133 @@
+#root {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Center items horizontally */
+  margin-bottom: 20px;
+  max-width: 1000px; /* Increase width to account for wider input */
+}
+
+input {
+  background-color: rgba(252, 252, 252, 0.2);
+  width: 980px; /* Increase width of input box */
+  border-radius: 3px;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  font-weight: 300;
+  margin-right: 10px;
+}
+
+.submit-button, .download-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.submit-button:hover, .download-button:hover {
+  background-color: #0056b3;
+}
+
+.download-button {
+  margin-top: 20px;
+  background-color: #28a745;
+}
+
+.download-button:hover {
+  background-color: #218838;
+}
+
+.response {
+  margin-top: 20px;
+  width: 100%; /* Make the response box width full */
+  text-align: center;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.response .error {
+  color: red;
+  font-weight: bold;
+}
+
+.result-table {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.result-gallery {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Increase min width for item container */
+  max-width: 1000px; /* Matches the width of input plus button */
+  margin: 0 auto; /* Centering the grid */
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-image {
+  width: 100%;
+  height: 250px; /* Increase the height for larger display */
+  object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.item-details {
+  text-align: left;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.item-details p {
+  margin: 5px 0;
+}
+

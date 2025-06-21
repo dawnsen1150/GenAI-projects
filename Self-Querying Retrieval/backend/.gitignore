@@ -1,0 +1,8 @@
+myenv/
+../test/
+*venv*/
+*.pyc
+__pycache__/
+self_query_retrival.ipynb
+test.ipynb
+.env*
