@@ -1,0 +1,14 @@
+numpy
+pandas
+langchain
+langchain_community
+langchain-openai
+langchain_core
+openai
+langchain_huggingface
+fastapi
+ipykernel
+uvicorn
+python-dotenv
+pymongo
+pypdf2
